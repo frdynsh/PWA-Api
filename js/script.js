@@ -6,10 +6,8 @@ $(document).ready(function(){
     var categories = [];
 
     $.get(var_url, function(data){
-
         $.each(data, function(key, items){
-            
-            _cat = items.category;
+            var _cat = items.category;
 
             dataResults += "<div>"
                             + "<h3>" + items.name + "</h3>"
@@ -18,37 +16,47 @@ $(document).ready(function(){
 
             if($.inArray(_cat, categories) == -1){
                 categories.push(_cat);
-                catResults += "<option value'"+ _cat +"'>" + _cat + "</option>";
+                catResults += "<option value='" + _cat + "'>" + _cat + "</option>";
             }
-
         });
 
         $('#products').html(dataResults);
         $('#cat_select').html("<option value='all'>Semua</option>" + catResults);
     });
 
+    // Fungsi filter
     $('#cat_select').on('change', function(){
-        var catSelect = $(this).val();
-        var dataFilter = '';
+        updateProduct($(this).val());
+    });
 
-        if(catSelect == 'all'){
-            $('#products').html(dataResults);
-            return;
+    function updateProduct(cat){
+        var dataResults = '';
+        var _newUrl = var_url; 
+
+        if(cat !== 'all'){
+            _newUrl = var_url + "?category=" + cat;
         }
 
-        $.get(var_url, function(data){
-            $.each(data, function(key, items){
-                _cat = items.category;
+        $.get(_newUrl, function(data){
 
-                if(_cat == catSelect){
-                    dataFilter += "<div>"
+            $.each(data, function(key, items){
+                var _cat = items.category;
+
+                if(cat === 'all' || _cat == cat){
+                    dataResults += "<div>"
                                     + "<h3>" + items.name + "</h3>"
                                     + "<p>" + _cat + "</p>" 
                                 + "</div>";
                 }
             });
-
-            $('#products').html(dataFilter);
+            $('#products').html(dataResults);
         });
+    }
+});
+
+
+$(document).ready(function(){
+    $('.menu-toggle').click(function(){
+        $('.nav-links').toggleClass('active');
     });
 });
