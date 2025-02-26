@@ -1,0 +1,24 @@
+{
+"products": [
+{"id":1,"name":"Crab (unidentified)","category":"Blue"},
+{"id":2,"name":"Blue crane","category":"Blue"},
+{"id":3,"name":"Painted stork","category":"Red"},
+{"id":4,"name":"Indian mynah","category":"Pink"},
+{"id":5,"name":"Armadillo, common long-nosed","category":"Teal"},
+{"id":6,"name":"Flamingo, chilean","category":"Teal"},
+{"id":7,"name":"Stork, jabiru","category":"Mauv"},
+{"id":8,"name":"Savanna fox","category":"Fuscia"},
+{"id":9,"name":"Cormorant, king","category":"Yellow"},
+{"id":10,"name":"Pie, rufous tree","category":"Goldenrod"},
+{"id":11,"name":"Duck, blue","category":"Red"},
+{"id":12,"name":"Fox, grey","category":"Orange"},
+{"id":13,"name":"North American beaver","category":"Mauv"},
+{"id":14,"name":"Lapwing (unidentified)","category":"Pink"},
+{"id":15,"name":"Crab, sally lightfoot","category":"Purple"},
+{"id":16,"name":"Tortoise, indian star","category":"Crimson"},
+{"id":17,"name":"Common zorro","category":"Maroon"},
+{"id":18,"name":"Timber wolf","category":"Mauv"},
+{"id":19,"name":"Sable antelope","category":"Red"},
+{"id":20,"name":"Western bearded dragon","category":"Teal"}
+]
+}
