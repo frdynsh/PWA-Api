@@ -1,6 +1,6 @@
 {
 "products": [
-{"id":1,"name":"Crab (unidentified)","category":"Blue"},
+{"id":1,"name":"Crab","category":"Blue"},
 {"id":2,"name":"Blue crane","category":"Blue"},
 {"id":3,"name":"Painted stork","category":"Red"},
 {"id":4,"name":"Indian mynah","category":"Pink"},
@@ -13,7 +13,7 @@
 {"id":11,"name":"Duck, blue","category":"Red"},
 {"id":12,"name":"Fox, grey","category":"Orange"},
 {"id":13,"name":"North American beaver","category":"Mauv"},
-{"id":14,"name":"Lapwing (unidentified)","category":"Pink"},
+{"id":14,"name":"Lapwing","category":"Pink"},
 {"id":15,"name":"Crab, sally lightfoot","category":"Purple"},
 {"id":16,"name":"Tortoise, indian star","category":"Crimson"},
 {"id":17,"name":"Common zorro","category":"Maroon"},
