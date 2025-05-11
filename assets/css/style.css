@@ -1,11 +1,18 @@
 /* Style dasar */
+*{
+    overflow-x: hidden;
+}
 body {
-    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    background: #c3cfe2;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* Header */
 header {
